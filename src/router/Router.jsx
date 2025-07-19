@@ -9,42 +9,13 @@ import Summary from "../pages/Summary";
 export const router = createBrowserRouter([
   {
     path: "/",
-    element: (
-      <MainLayout>
-        <Dashboard />
-      </MainLayout>
-    ),
-  },
-  {
-    path: "/tasks",
-    element: (
-      <MainLayout>
-        <Tasks />
-      </MainLayout>
-    ),
-  },
-  {
-    path: "/bills",
-    element: (
-      <MainLayout>
-        <Bills />
-      </MainLayout>
-    ),
-  },
-  {
-    path: "/grocery",
-    element: (
-      <MainLayout>
-        <Grocery />
-      </MainLayout>
-    ),
-  },
-  {
-    path: "/summary",
-    element: (
-      <MainLayout>
-        <Summary />
-      </MainLayout>
-    ),
+    element: <MainLayout />,
+    children: [
+      { path: "/", element: <Dashboard /> },
+      { path: "/tasks", element: <Tasks /> },
+      { path: "/bills", element: <Bills /> },
+      { path: "/grocery", element: <Grocery /> },
+      { path: "/summary", element: <Summary /> },
+    ],
   },
 ]);
