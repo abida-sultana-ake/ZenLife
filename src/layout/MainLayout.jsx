@@ -1,6 +1,7 @@
 import React from "react";
 import { Outlet } from "react-router";
 import Sidebar from "./Sidebar";
+import Navbar from "./Navbar";
 
 const MainLayout = () => {
   return (
@@ -9,7 +10,8 @@ const MainLayout = () => {
       <Sidebar />
 
       {/* Main Content Area */}
-      <main className="flex-1 p-6 overflow-y-auto">
+      <main className="flex-1 overflow-y-auto">
+        <Navbar />
         <Outlet />
       </main>
     </div>

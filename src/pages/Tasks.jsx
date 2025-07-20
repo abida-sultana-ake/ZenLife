@@ -1,4 +1,3 @@
-// Improved, responsive, clean UI for Task Manager
 import React, { useState } from "react";
 import { FaPlus, FaCheckCircle, FaTimes } from "react-icons/fa";
 import { AnimatePresence, motion } from "framer-motion";

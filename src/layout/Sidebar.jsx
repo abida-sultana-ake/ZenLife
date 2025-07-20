@@ -40,12 +40,6 @@ const Sidebar = () => {
         {/* Navigation Items */}
         <nav className="space-y-2">
           <SidebarItem
-            to="/"
-            icon={<FaHome />}
-            label="Dashboard"
-            collapsed={collapsed}
-          />
-          <SidebarItem
             to="/tasks"
             icon={<FaTasks />}
             label="Tasks"
